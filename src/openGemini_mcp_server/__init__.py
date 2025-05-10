@@ -1,4 +1,4 @@
-from mcp_openGemini.config import Config
+from openGemini_mcp_server.config import Config
 from . import server
 import asyncio
 

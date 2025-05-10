@@ -1,5 +1,5 @@
 from influxdb import InfluxDBClient
-from mcp_openGemini.config import Config
+from openGemini_mcp_server.config import Config
 
 import asyncio
 import logging

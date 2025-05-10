@@ -18,12 +18,16 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build]
 exclude = [
+    "venv",
     ".git",
     ".gitignore"
 ]
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/openGemini_mcp_server"]
+
 [project.scripts]
-openGemini-mcp-server = "openGemini_mcp_server:main"
+openGemini-mcp-server = "openGemini_mcp_server:server"
 
 [project.urls]
 Home = "https://github.com/openGemini/openGemini-mcp-server"
